@@ -209,3 +209,10 @@ td a {
         opacity: 1;
     }
 }
+
+@media screen and (max-width: 400px) {
+    .animationList__table {
+        width: 95%;
+        min-width: 300px;
+    }
+}

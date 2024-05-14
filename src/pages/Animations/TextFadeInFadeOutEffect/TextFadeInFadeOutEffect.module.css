@@ -1,0 +1,36 @@
+.textFadingEffect {
+    position: relative;
+    font-size: 3.5rem;
+    color: rgb(200, 200, 47);
+    overflow: hidden;
+}
+
+.textFadingEffect::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(14, 16, 15);
+    animation: fading 10s linear infinite;
+}
+
+@keyframes fading {
+    0% {
+        left: 0%;
+    }
+
+    50% {
+        left: 100%;
+    }
+
+    100% {
+        left: 0%;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .textFadingEffect {
+        font-size: 2rem;
+    }
+}

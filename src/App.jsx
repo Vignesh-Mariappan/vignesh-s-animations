@@ -9,7 +9,7 @@ import AnimationList from './pages/AnimationList/AnimationList';
 import Animations from './pages/Animations/Animations';
 
 function App() {
-
+  const [ currentPage, setCurrentPage] = useState(1);
 
   const router = createBrowserRouter([
     {
@@ -18,7 +18,7 @@ function App() {
     },
     {
       path: "/animation-list",
-      element: <AnimationList />,
+      element: <AnimationList currentPage={currentPage} setCurrentPage={setCurrentPage} />,
     },
     {
       path: "/animation/:animationId",

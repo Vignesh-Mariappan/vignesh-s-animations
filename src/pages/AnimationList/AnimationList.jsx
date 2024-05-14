@@ -7,20 +7,40 @@ import { useEffect, useState } from 'react';
 
 const tableData = [
   {
+    id: 14,
+    name: "Newton's Cradle effect"
+  },
+  {
     id: 7,
     name: "Split loading effect"
   },
   {
-    id: 8,
-    name: "Creative popup"
+    id: 15,
+    name: "Cloud rain drop effect"
   },
+  // {
+  //   id: 8,
+  //   name: "Creative popup"
+  // },
   {
     id: 9,
     name: "Wavy effect"
   },
+  // {
+  //   id: 10,
+  //   name: "Creative image hover effect"
+  // },
+  // {
+  //   id: 11,
+  //   name: "Black and white text hover effect"
+  // },
   {
-    id: 10,
-    name: "Creative image hover effect"
+    id: 12,
+    name: "Text fade in and fade out effect"
+  },
+  {
+    id: 13,
+    name: "Line loading effect"
   },
   {
     id: 1,
@@ -30,14 +50,14 @@ const tableData = [
     id: 2,
     name: "Moving square effect"
   },
-  {
-    id: 3,
-    name: "Blur focus text hover effect"
-  },
-  {
-    id: 4,
-    name: "Image slide show effect"
-  },
+  // {
+  //   id: 3,
+  //   name: "Blur focus text hover effect"
+  // },
+  // {
+  //   id: 4,
+  //   name: "Image slide show effect"
+  // },
   {
     id: 5,
     name: "Rotating ring effect"
@@ -48,10 +68,9 @@ const tableData = [
   }
 ]
 
-const AnimationList = () => {
+const AnimationList = ({currentPage, setCurrentPage}) => {
 
   const [ totalPages, setTotalPages ] = useState(Math.ceil(tableData.length / 5));
-  const [ currentPage, setCurrentPage] = useState(1);
   const [ currentPageData, setCurrentPageData ] = useState(tableData.slice(0, currentPage * 5));
   const [ currentPageChanged, setCurrentPageChanged ] = useState(false)
 

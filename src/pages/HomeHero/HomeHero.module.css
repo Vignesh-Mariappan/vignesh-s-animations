@@ -166,6 +166,8 @@
     animation: fidgetSpinnerRotateAnim 1s linear infinite .5s, fidgetSpinnerMoveUpAnim .5s forwards 1.5s;
     height: 100px;
     width: 100px;
+    height: max(1.9375rem, min(6.8vw + .3rem, 8rem));
+    width: max(1.9375rem, min(6.8vw + .3rem, 8rem));
     opacity: 0;
     position: absolute;
     bottom: 0;
@@ -214,6 +216,7 @@
     opacity: 0;
     animation: moveUpAndVisibleAnim 1s forwards 5.5s;
     align-self: flex-start;
+    margin-top: -.5rem;
 }
 
 .letter-I-2 {
@@ -234,6 +237,34 @@
     animation: letterNAnim2 .5s forwards 5s;
     transform-origin: center center;
     align-self: flex-start;
+}
+
+@media screen and (max-width: 575px) {
+    .homeHeroContainer {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+    .heading-xl {
+        font-size: max(3.125rem,min(10vw + 2rem,18rem));
+    }
+    .letter-T {
+        margin-top: 0;
+    }
+    .homeHero__btn {
+        padding: .7rem 1rem;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 385px) {
+    .homeHeroContainer {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .heading-xl {
+        font-size: max(3.125rem,min(7vw + 2rem,18rem));
+    }
+    
 }
 
 @keyframes starSpinnerRotation {

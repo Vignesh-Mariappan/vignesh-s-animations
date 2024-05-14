@@ -1,0 +1,35 @@
+.blackAndWhiteTextContainer {
+    position: relative;
+    width: 800px;
+}
+
+.blackAndWhiteTextContainer h3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-size: 220px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.blackAndWhiteTextContainer h3:last-child {
+    color: white;
+    clip-path: polygon(0 0, 100% 0, 100% 20%, 0% 100%);
+    background: var(--background, steelblue);
+    transition: .5s;
+}
+
+.blackAndWhiteTextContainer h3:last-child:hover {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.blackAndWhiteTextContainer h3:first-child:hover ~ h3 {
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+}
+
+
+
