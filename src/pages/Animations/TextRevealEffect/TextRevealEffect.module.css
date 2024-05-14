@@ -1,0 +1,35 @@
+h1 {
+    font-size: 40px;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    letter-spacing: 15px !important;
+    color: white;
+    position: relative;
+}
+
+h1:before {
+    content: "Loading";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: #f6b93b;
+    overflow: hidden;
+    border-right: 4px solid #f6b93b;
+    animation: textReveal 5s linear infinite;
+}
+
+@keyframes textReveal {
+    0% {
+        width: 0;
+    }
+
+    50% {
+        width: 100%;
+    }
+
+    100% {
+        width: 0;
+    }
+}

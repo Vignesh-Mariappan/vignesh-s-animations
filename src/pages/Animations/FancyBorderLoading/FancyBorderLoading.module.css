@@ -1,0 +1,43 @@
+.loading {
+    position: relative;
+    width: 200px;
+    aspect-ratio: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loading span {
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    /* transform: translate(-50%, -50%); */
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+    border: 2px solid whitesmoke;
+    animation: rotateRings 2s linear infinite;
+}
+
+.loading span:nth-child(1) {
+    border-radius: 43% 57% 33% 67% / 56% 30% 70% 44%;
+}
+
+.loading span:nth-child(2) {
+    border-radius: 80% 20% 85% 15% / 20% 79% 21% 80%;
+    animation-direction: reverse;
+}
+
+.loading span:nth-child(2) {
+    border-radius: 29% 71% 47% 53% / 31% 27% 73% 69%;
+    animation-duration: 4s;
+}
+
+.loading h5 {
+        color: white;
+}
+
+@keyframes rotateRings {
+    0% { transform: rotate(0deg) };
+    100% { transform: rotate(360deg) };
+}

@@ -1,0 +1,26 @@
+.card {
+    min-width: 300px;
+    width: 95vw;
+    max-width: 500px;
+    min-height: 250px;
+    height: auto;
+    background-color: oklch(0.719967 0.123825 62.7564);
+    color: oklch(0.143993 0.024765 62.7564);
+    padding: 1.5rem;
+    border-radius: 10px;
+    transition: all .5s;
+    clip-path: circle(7.4% at 88% 13%);
+}
+
+.cardHeader {
+    margin-bottom: 1.5rem;
+}
+
+.card p {
+    font-size: 1rem;
+}
+
+.card:hover, .card:active {
+    clip-path: circle(70.7% at 50% 50%);
+}
+
