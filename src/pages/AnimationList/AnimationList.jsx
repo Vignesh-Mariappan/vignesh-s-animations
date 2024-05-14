@@ -3,6 +3,8 @@ import styles from './AnimationList.module.css';
 
 import { BiSolidChevronRightCircle } from "react-icons/bi";
 import { TbSquareChevronRight, TbSquareChevronLeft } from "react-icons/tb";
+import { FaInfoCircle } from "react-icons/fa";
+
 import { useEffect, useState } from 'react';
 
 const tableData = [
@@ -141,6 +143,11 @@ const AnimationList = ({currentPage, setCurrentPage}) => {
           <TbSquareChevronRight size={"2rem"} className={currentPage === totalPages && styles["disabled"] } onClick={goToNextPage} />
         </div>
       </div>
+
+        <div className={`${styles.animationList__info} font-semibold`}>
+          <FaInfoCircle size={"1rem"} />
+          Looks best in Desktop!!!
+        </div>
       </main>
     </>
   )

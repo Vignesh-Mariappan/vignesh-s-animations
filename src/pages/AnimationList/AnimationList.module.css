@@ -188,6 +188,21 @@ td a {
     opacity: .5;
 }
 
+.animationList__info {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 400px;
+    margin-top: 1rem;
+    padding: 1rem;
+    background: oklch(0.723547 0.092794 79.1294 / 0.2);
+    color: oklch(0.723547 0.092794 79.1294);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -214,5 +229,9 @@ td a {
     .animationList__table {
         width: 95%;
         min-width: 300px;
+    }
+
+    .animationsList__header-text {
+        font-size: 1.5rem;
     }
 }
