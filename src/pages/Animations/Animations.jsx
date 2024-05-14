@@ -36,35 +36,35 @@ const Animations = () => {
             </div>
         </Link>
 
-        { animationId === "1" && (<div className={`${styles.animationWrapper}`}><TextRevealEffect /></div>) }
+        { animationId === "1" && (<div className={`${styles.animationWrapper}`} style={{ "--background": "oklch(0.216758 0.023072 329.709)"}}><NewtonsCradleEffect /></div>) }
 
-        { animationId === "2" && (<div className={`${styles.animationWrapper}`}><MovingSquaresEffect /></div>) }
+        { animationId === "2" && (<div className={`${styles.animationWrapper}`}><SplitLoadingEffect /></div>) }
 
-        { animationId === "3" && (<div className={`${styles.animationWrapper}`} style={{ "--background": "transparent" }}><BlurFocusTextHoverEffect /></div>) }
+        { animationId === "3" && (<div className={`${styles.animationWrapper}`} /* style={{ "--background": "transparent" }} */ style={{ "--background": "oklch(0.753513 0.138989 232.661)"}}><CloudRainDropsEffect /></div>) }
 
-        { animationId === "4" && (<div className={`${styles.animationWrapper}`}><ImageSliderEffect /></div>) }
+        { animationId === "4" && (<div className={`${styles.animationWrapper}`}><WavyEffect /></div>) }
 
-        { animationId === "5" && (<div className={`${styles.animationWrapper}`}><RotatingRingEffect /></div>) }
+        { animationId === "5" && (<div className={`${styles.animationWrapper}`}><TextFadeInFadeOutEffect /></div>) }
 
-        { animationId === "6" && (<div className={`${styles.animationWrapper}`}><FancyBorderLoading /></div>) }
+        { animationId === "6" && (<div className={`${styles.animationWrapper}`}><LineLoadingEffect /></div>) }
 
-        { animationId === "7" && (<div className={`${styles.animationWrapper}`}><SplitLoadingEffect /></div>) }
+        { animationId === "7" && (<div className={`${styles.animationWrapper}`}><TextRevealEffect /></div>) }
 
-        { animationId === "8" && (<div className={`${styles.animationWrapper}`}><CreativePopup /></div>) }
+        { animationId === "8" && (<div className={`${styles.animationWrapper}`}><MovingSquaresEffect /></div>) }
 
-        { animationId === "9" && (<div className={`${styles.animationWrapper}`}><WavyEffect /></div>) }
+        { animationId === "9" && (<div className={`${styles.animationWrapper}`}><RotatingRingEffect /></div>) }
 
-        { animationId === "10" && (<div className={`${styles.animationWrapper}`}><CreativeImageHoverEffect /></div>) }
+        { animationId === "10" && (<div className={`${styles.animationWrapper}`}><FancyBorderLoading /></div>) }
 
-        { animationId === "11" && (<div className={`${styles.animationWrapper}`} style={{ "--background": "steelblue" }}><BlackAndWhiteTextEffect /></div>) }
+        {/* { animationId === "14" && (<div className={`${styles.animationWrapper}`} style={{ "--background": "steelblue" }}><BlackAndWhiteTextEffect /></div>) }
 
-        { animationId === "12" && (<div className={`${styles.animationWrapper}`}><TextFadeInFadeOutEffect /></div>) }
+        { animationId === "11" && (<div className={`${styles.animationWrapper}`}><BlurFocusTextHoverEffect /></div>) }
 
-        { animationId === "13" && (<div className={`${styles.animationWrapper}`}><LineLoadingEffect /></div>) }
+        { animationId === "12" && (<div className={`${styles.animationWrapper}`}><ImageSliderEffect /></div>) }
 
-        { animationId === "14" && (<div className={`${styles.animationWrapper}`} style={{ "--background": "oklch(0.216758 0.023072 329.709)"}}><NewtonsCradleEffect /></div>) }
+        { animationId === "15" && (<div className={`${styles.animationWrapper}`}><CreativePopup /></div>) }
 
-        { animationId === "15" && (<div className={`${styles.animationWrapper}`} style={{ "--background": "oklch(0.753513 0.138989 232.661)"}}><CloudRainDropsEffect /></div>) }
+        { animationId === "13" && (<div className={`${styles.animationWrapper}`}><CreativeImageHoverEffect /></div>) } */}
     </div>
   )
 }

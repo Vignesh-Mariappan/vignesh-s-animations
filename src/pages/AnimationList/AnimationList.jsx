@@ -9,65 +9,65 @@ import { useEffect, useState } from 'react';
 
 const tableData = [
   {
-    id: 14,
+    id: 1,
     name: "Newton's Cradle effect"
   },
   {
-    id: 7,
+    id: 2,
     name: "Split loading effect"
   },
   {
-    id: 15,
+    id: 3,
     name: "Cloud rain drop effect"
   },
-  // {
-  //   id: 8,
-  //   name: "Creative popup"
-  // },
   {
-    id: 9,
+    id: 4,
     name: "Wavy effect"
   },
-  // {
-  //   id: 10,
-  //   name: "Creative image hover effect"
-  // },
-  // {
-  //   id: 11,
-  //   name: "Black and white text hover effect"
-  // },
   {
-    id: 12,
+    id: 5,
     name: "Text fade in and fade out effect"
   },
   {
-    id: 13,
+    id: 6,
     name: "Line loading effect"
   },
   {
-    id: 1,
+    id: 7,
     name: "Text reveal animation"
   },
   {
-    id: 2,
+    id: 8,
     name: "Moving square effect"
   },
-  // {
-  //   id: 3,
-  //   name: "Blur focus text hover effect"
-  // },
-  // {
-  //   id: 4,
-  //   name: "Image slide show effect"
-  // },
   {
-    id: 5,
+    id: 9,
     name: "Rotating ring effect"
   },
   {
-    id: 6,
+    id: 10,
     name: "Fancy border loading effect"
-  }
+  },
+  // {
+  //   id: 11,
+  //   name: "Blur focus text hover effect"
+  // },
+  // {
+  //   id: 12,
+  //   name: "Image slide show effect"
+  // },
+  // {
+  //   id: 13,
+  //   name: "Creative image hover effect"
+  // },
+  // {
+  //   id: 14,
+  //   name: "Black and white text hover effect"
+  // },
+  // {
+  //   id: 15,
+  //   name: "Creative popup"
+  // },
 ]
 
 const AnimationList = ({currentPage, setCurrentPage}) => {
