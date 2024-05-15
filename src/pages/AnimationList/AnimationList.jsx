@@ -1,9 +1,8 @@
 import { Link } from 'react-router-dom';
 import styles from './AnimationList.module.css';
 
-import { BiSolidChevronRightCircle } from "react-icons/bi";
 import { TbSquareChevronRight, TbSquareChevronLeft } from "react-icons/tb";
-import { FaInfoCircle } from "react-icons/fa";
+import { FaInfoCircle, FaArrowRight } from "react-icons/fa";
 
 import { useEffect, useState } from 'react';
 
@@ -126,7 +125,12 @@ const AnimationList = ({currentPage, setCurrentPage}) => {
                           { row.name }
                           </span>
                         </td>
-                        <td><Link to={`/animation/${row.id}`}><BiSolidChevronRightCircle size="1.5rem" className={`${styles["animationList__tableRow-viewIcon"]}`} color={"rgb(255, 252, 225)"} /></Link></td>
+                        <td><Link to={`/animation/${row.id}`}>
+                            <button className={`${styles["animationList__viewAnim-btn"]} font-semibold`}>
+                              <span>View</span>
+                              <FaArrowRight size="1rem" className={`${styles["animationList__tableRow-viewIcon"]}`} color={"black"} />
+                            </button>
+                        </Link></td>
                     </tr>
                 )
               })

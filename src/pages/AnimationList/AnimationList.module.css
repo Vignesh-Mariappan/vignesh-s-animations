@@ -150,15 +150,6 @@ td a {
     width: 20%;
 }
 
-.animationList__tableRow-viewIcon {
-    cursor: pointer;
-    transition: all .3s;
-}
-
-.animationList__tableRow-viewIcon:hover {
-    transform: scale(1.2);
-}
-
 .animationList__tableRow:nth-of-type(n) {
     background-color: #3f3f46;
 }
@@ -201,12 +192,45 @@ td a {
     align-items: center;
     justify-content: center;
     gap: 10px;
+    z-index: 2;
+    position: relative;
+    overflow: hidden;
+    animation: fadeInUp 1s linear forwards;
+}
+
+.animationList__tableRow td a {
+    text-decoration: none;
+}
+
+.animationList__viewAnim-btn {
+    background: rgb(255, 252, 225);
+    color: black;
+    padding: .4rem 1rem;
+    text-transform: capitalize;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.animationList__viewAnim-btn:hover {
+    background: rgba(255, 252, 225, 0.75);
+    transform: scale(1.1);
+}
+
+.animationList__tableRow-viewIcon {
+    margin-top: 2px;
 }
 
 @keyframes fadeInUp {
     from {
-        opacity: 0;
-        transform: translateY(20px);
+        opacity: 0.5;
+        transform: translateY(5px);
     }
 
     to {
