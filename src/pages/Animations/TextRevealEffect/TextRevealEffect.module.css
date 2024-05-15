@@ -1,4 +1,4 @@
-h1 {
+.textReveal {
     font-size: 40px;
     margin: 0;
     padding: 0;
@@ -8,8 +8,8 @@ h1 {
     position: relative;
 }
 
-h1:before {
-    content: "Loading";
+.textReveal:before {
+    content: "Loading...";
     position: absolute;
     top: 0;
     left: 0;
@@ -17,10 +17,10 @@ h1:before {
     color: #f6b93b;
     overflow: hidden;
     border-right: 4px solid #f6b93b;
-    animation: textReveal 5s linear infinite;
+    animation: textRevealAnim 5s linear infinite;
 }
 
-@keyframes textReveal {
+@keyframes textRevealAnim {
     0% {
         width: 0;
     }
