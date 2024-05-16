@@ -216,7 +216,7 @@
     opacity: 0;
     animation: moveUpAndVisibleAnim 1s forwards 5.5s;
     align-self: flex-start;
-    margin-top: -.5rem;
+    margin-top: 1rem;
 }
 
 .letter-I-2 {
@@ -237,6 +237,12 @@
     animation: letterNAnim2 .5s forwards 5s;
     transform-origin: center center;
     align-self: flex-start;
+}
+
+@media screen and (max-width: 2100px) {
+    .letter-T {
+        margin-top: -.5rem;
+    }
 }
 
 @media screen and (max-width: 1000px) {
